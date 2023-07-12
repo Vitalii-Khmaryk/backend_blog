@@ -7,7 +7,8 @@ const path = require("path");
 const config = require("./config/db");
 const account = require("./routes/account");
 const Post = require("./models/post");
-require('dotenv').config();
+const dotenv=require('dotenv');
+dotenv.config();
 const app = express();
 
 const port =process.env.PORT || 3000;
