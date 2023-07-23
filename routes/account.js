@@ -5,6 +5,7 @@ const passport = require('passport');
 const jwt = require('jsonwebtoken');
 const config = require('../config/db');
 const Post = require('../models/post');
+
 router.post('/reg', (req, res) => {
     let newUser = new User({
         name: req.body.name,
